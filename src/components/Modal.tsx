@@ -11,11 +11,11 @@ const Modal: React.FC<ModalProps> = ({ isOpen, onClose, children }) => {
 
     return (
         <div
-            className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50"
+            className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-60"
             onClick={onClose}
         >
             <div
-                className="bg-white flex flex-col justify-center items-center min-w-32 min-h-20 max-w-xl m-6 rounded-lg p-6 shadow-lg"
+                className="bg-white flex flex-col justify-center items-center min-w-32 min-h-20 max-w-xl m-6 rounded-xl shadow-lg"
                 onClick={(e) => e.stopPropagation()}
             >
                 <button
